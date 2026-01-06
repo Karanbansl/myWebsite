@@ -179,6 +179,7 @@ input {
     margin-top: 16px;
     margin-bottom: 60px;
 }
+
 /* make the buttons aligned and close*/
 /* main {
     display: flex;
@@ -186,15 +187,22 @@ input {
     align-items: center;
 } */
 @media (max-width: 768px) {
+    body {
+        display: block;
+        align-items: unset;
+        justify-content: unset;
+    }
 
     /* Container adapts to phone */
     .container {
+        margin: 0 auto;
         width: 100%;
         height: auto;
         min-height: 100vh;
 
         border-radius: 0;
         padding: 24px;
+        padding-top: 32px;
     }
 
     /* Title scales down */
